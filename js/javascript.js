@@ -39,7 +39,7 @@ let personale = [
 console.log(personale);
 
 for (let i = 0; i < personale.length; i++) {
-  let tbody = document.getElementById('tbody');
+  const tbody = document.getElementById('tbody');
   let tr = document.createElement('tr');
   let nameCell = document.createElement('th');
   nameCell.innerText = personale[i].name;

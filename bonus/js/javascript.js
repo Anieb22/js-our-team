@@ -39,21 +39,21 @@ let personale = [
    console.log(personale);
 
    for (let i = 0; i < personale.length; i++) {
-    let cards = document.getElementById('card');
+    const cards = document.getElementById('card');
     //CONTENITORE CARDS
-    let cardContainer = document.createElement('div');
+    const cardContainer = document.createElement('div');
     cardContainer.classList.add('card');
     cardContainer.style.width = '18rem';
     //IMMAGINI
-    let cardImage = document.createElement('img');
+    const cardImage = document.createElement('img');
     cardImage.src = `../img/${personale[i].image}`;
     cardImage.classList.add('card-img-top');
     //NOME
-    let cardName = document.createElement('div');
+    const cardName = document.createElement('div');
     cardName.classList.add('fw-bold');
     cardName.innerText = personale[i].name
     //RUOLO
-    let cardBody = document.createElement ('div');
+    const cardBody = document.createElement ('div');
     cardBody.classList.add('card-body');
     let p = document.createElement('p');
     p.classList.add('card-text');
